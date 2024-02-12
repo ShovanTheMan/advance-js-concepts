@@ -1,6 +1,6 @@
 console.log(1);
 console.log(2);
-setTimeout(() => {
+ setTimeout(() => {
     console.log('lazy dog');
 }, 4000);
 // 4000 milisecond = 4 second por show korbe 
@@ -12,3 +12,7 @@ console.log(6);
 function doSomething(){
     console.log(3);
 }
+let num = 0;
+ const intervalId = setTimeout(()=>{
+    console.log(num++)
+ },2000);
